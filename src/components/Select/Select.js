@@ -15,7 +15,7 @@ const Select = ({ label, value, onChange, children }) => {
 		</NativeDropdown>
 		<ShownDropdown >
 			{displayedValue}
-			<IconWrapper id={'chevron-down'} width= {'12'}/>
+			<IconWrapper id={'chevron-down'} width= {'16'}/>
 		</ShownDropdown>
 	</Wrapper>
   );
@@ -48,6 +48,10 @@ const ShownDropdown = styled.div`
 	border-radius: 8px;
 	padding: 12px 36px 12px 16px; 
 	color: ${COLORS.gray700};
+
+	&:hover {
+		color: black;
+	}
 `
 
 
